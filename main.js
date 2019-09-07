@@ -20,3 +20,25 @@ window.onclick = function(event) {
     dropdown.classList.remove('show');
     dropdown2.classList.remove('show');
 }
+
+//activity boxes
+const contBoxes = document.querySelector('.cont-boxes');
+const colors = [
+    '#ebedf0','#c6e48b','#7bc96f','#239a3b','#196127'
+];
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+for (let i = 0; i < 300; i++) {
+    let box = document.createElement('div');
+    box.style.width = '12px';
+    box.style.height = '12px';
+    box.style.margin = '3px';
+    box.style.backgroundColor = colors[getRandomInt(0,4)];
+
+    contBoxes.appendChild(box);
+}

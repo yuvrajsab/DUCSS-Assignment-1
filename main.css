@@ -9,7 +9,6 @@
 
 body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    height: 2000px;
 }
 
 .github-logo {
@@ -350,9 +349,9 @@ section nav ul li:hover {
 
 .repo-wrapper {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 16px 0;
+    margin-bottom: 24px;
 }
 
 .repo-stats > span {
@@ -366,16 +365,16 @@ section nav ul li:hover {
 
 .repo-block-container {
     padding: 0 8px;
+    margin-bottom: 16px;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .repo-block {
     font-size: 12px;
     color: #5d697b;
     border: 1px solid #d1d5da;
+    height: 100%;
+    line-height: 1.5;
     border-radius: 3px;
     padding: 16px;
 }
@@ -402,4 +401,141 @@ section nav ul li:hover {
 .repo-para {
     margin-top: 8px;
     margin-bottom: 16px;
+}
+
+.contribution-block {
+    border: 1px solid #c4c9cc;
+    border-radius: 3px;
+}
+
+.cont-info-wrap {
+    display: flex;
+}
+
+.cont-grid {
+    display: flex;
+}
+
+.contribution-block {
+    padding: 8px 16px;
+}
+
+.months > ul {
+    font-size: 12px;
+    color: #5d697b;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 12px;
+    height: 12px;
+    background: #0366d6;
+}
+
+.cont-info-boxes {
+    display: flex;
+}
+
+.cont-info {
+    padding:  16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-info > span {
+    font-size: 12px;
+    color: #0366d6;
+}
+
+.cont-info-boxes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.cont-info-boxes li {
+    width: 12px;
+    height: 12px;
+}
+
+.cont-info-boxes-container {
+    font-size: 12px;
+    display: flex;
+}
+
+.contribution-wrapper {
+    margin-bottom: 24px;
+}
+
+.cont-act-month-name {
+    font-size: 12px;
+}
+
+.cont-act-status {
+    font-size: 14px;
+    text-align: center;
+    padding: 16px;
+    color: #404448;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between
+}
+
+.activity-button {
+    margin: 16px 0;
+    background: white;
+    padding: 8px 6px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #c4c9cc;
+    color: #0366d6;
+}
+
+.activity-button:hover {
+    background: #eee;
+}
+
+.github-report-para {
+    font-size: 12px;
+    color: #586069;
+}
+
+.github-report-para > span {
+    color: #0366d6;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    border-top: 1px solid #c4c9cc;
+    padding: 40px;
+    margin: 0 56px;
+    margin-top: 40px;
+}
+footer nav ul {
+    color: #0366d6;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+footer nav ul > li:first-child, footer nav ul > li:nth-child(7) {
+    color: #586069;
+}
+
+.cont-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
 }
