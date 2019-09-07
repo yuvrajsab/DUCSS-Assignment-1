@@ -186,12 +186,14 @@ header nav ul li {
 
 main {
     margin-top: 24px;
-    padding: 0 32px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 56px;
 }
 
 main > aside {
-    width: 25%;
-    padding: 0 16px;
+    width: 20%;
+    /* padding: 0 16px; */
 }
 
 .user-profile-image {
@@ -296,4 +298,108 @@ main > aside {
     vertical-align: middle;
     width: 35px;
     height: 35px;
+}
+
+/* section */
+main section {
+    width: 70%;
+}
+
+main section nav {
+    border-bottom: 1px solid #c4c9cc;
+}
+
+.badge-circle {
+    background-color: #ededee;
+    color: #586069;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+main section nav ul {
+    display: flex;
+    list-style: none;
+}
+
+section nav li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #e36209 !important;
+}
+
+main section nav ul li {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    padding: 16px 8px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section nav ul li:hover {
+    border-bottom: 2px solid #d1d5da;
+}
+
+.section-content {
+    margin-top: 24px;
+}
+
+.repo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 0;
+}
+
+.repo-stats > span {
+    margin-right: 16px;
+}
+
+.repo-wrapper svg {
+    margin-right: 3px;
+    fill: #586069;
+}
+
+.repo-block-container {
+    padding: 0 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.repo-block {
+    font-size: 12px;
+    color: #5d697b;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    padding: 16px;
+}
+
+.repo-url {
+    font-size: 14px;
+    color: #0366d6;
+    cursor: pointer;
+}
+.repo-url:hover {
+    text-decoration: underline;
+}
+
+.repo-language-color {
+    background: #f1e05a;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.repo-para {
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
