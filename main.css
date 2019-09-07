@@ -1,0 +1,171 @@
+@import 'reset.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.github-logo {
+    fill: white;
+    cursor: pointer;
+}
+
+.github-logo:hover {
+    fill: #bdbfc0;
+}
+
+header {
+    background-color: #24292e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+#header-search-bar {
+    padding: 0 8px;
+    height: 28px;
+    width: 300px;
+    background-color: #404448;
+    border-radius: 3px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+#header-search-bar input {
+    width: 100%;
+    height: inherit;
+    border: none;
+    border-style: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    background: inherit;
+}
+#header-search-bar img {
+    display: block;
+}
+
+.left-nav {
+    margin: 0 16px;
+    flex: auto;
+}
+
+.nav-icon {
+    fill: white;
+}
+
+.nav-icon-sm {
+    width: 8px;
+
+}
+
+.nav-profile-dropdown-img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 3px;
+}
+
+.right-nav {
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+    align-self: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover > svg {
+    fill: #bdbfc0;
+}
+
+.nav-link:hover {
+    color: #bdbfc0;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-dropdown > a > svg:last-child {
+    margin-left: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border-radius: 3px;
+    padding: 5px 0;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    z-index: 100;
+    border: 1px solid rgba(27,31,35,.15);
+    box-shadow: 0 3px 12px rgba(27,31,35,.15);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-menu > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+.dropdown-item {
+    width: 100%;
+    padding: 4px 16px;   
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #2a2f34;
+}
+.dropdown-item:hover {
+    background-color: #0366d6;
+    color: white;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-dropdown-status-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 8px;
+}
