@@ -560,3 +560,87 @@ footer nav ul > li:first-child, footer nav ul > li:nth-child(7) {
 .sticky + .content {
     padding-top: 60px;
 }
+
+#ham-menu {
+    display: none;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    main aside {
+        width: 100%;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    .repo-wrapper {
+        flex-direction: column;
+    }
+    
+    .repo-block-container {
+        width: 100%;
+    }
+
+    footer {
+        padding: 16px;
+    }
+
+    footer nav ul > li {
+        display: none;
+    }
+
+    footer nav ul > li:nth-child(7) {
+        display: inline;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-nav ul {
+        display: none;
+        padding: 16px 0;
+        flex-direction: column;
+    }
+
+    .left-nav ul li {
+        border-bottom: 1px solid #586069; 
+        margin: 0;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .sticky {
+        padding: 0;
+        overflow: scroll;
+    }
+
+    .right-nav ul {
+        width: 100%;
+        justify-content: stretch;
+        flex: 1;
+        padding-top: 16px;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #ham-menu {
+        display: block;
+        cursor: pointer;
+    }
+}

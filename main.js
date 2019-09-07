@@ -53,3 +53,19 @@ window.onscroll = function() {
         navbar.classList.remove("sticky");
     }
 };
+
+
+const hamMenu = document.querySelector('#ham-menu');
+const leftNav = document.querySelector('.left-nav ul');
+
+let counter = 0;
+
+hamMenu.addEventListener('click', function() {
+    if (counter === 0) {
+        counter = 1;
+        leftNav.style.display = 'block';
+    } else {
+        leftNav.style.display = 'none';        
+        counter = 0;
+    }
+});
